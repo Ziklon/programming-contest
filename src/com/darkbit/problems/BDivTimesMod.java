@@ -19,7 +19,7 @@ public class BDivTimesMod {
 
     for (int a : factors) {
       int b = n / a;
-      
+
     }
   }
 }

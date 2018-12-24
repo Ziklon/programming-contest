@@ -21,21 +21,30 @@ public class Main {
     OutputStream outputStream = System.out;
     InputReader in = new InputReader(inputStream);
     OutputWriter out = new OutputWriter(outputStream);
-    BDivTimesMod solver = new BDivTimesMod();
+    NewYearChaos solver = new NewYearChaos();
     solver.solve(1, in, out);
     out.close();
   }
 
-  static class BDivTimesMod {
+  static class NewYearChaos {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-      int n = in.readInt(), x = in.readInt();
+      int t = in.readInt();
+      for (int u = 0; u < t; ++u) {
+        int n = in.readInt();
+        int seq[] = new int[n];
+        for (int i = 0; i < n; ++i) seq[i] = in.readInt();
 
-      for (int i = 1; i <= 2000000; ++i) {
-        int d1 = i / x;
-        int d2 = i % x;
-        if (1L * d1 * d2 == n) {
-          out.print(i);
-          return;
+        int ans = 0;
+        boolean isThereSol = true;
+        for (int i = 0; i < n; ++i)
+          if (Math.abs(seq[i] - 1 - i) > 2) {
+            isThereSol = false;
+          }
+
+        if (!isThereSol) {
+          out.printLine("Too chaotic");
+        } else {
+          out.printLine(3);
         }
       }
     }
@@ -52,12 +61,26 @@ public class Main {
       this.writer = new PrintWriter(writer);
     }
 
+    public void print(Object... objects) {
+      for (int i = 0; i < objects.length; i++) {
+        if (i != 0) {
+          writer.print(' ');
+        }
+        writer.print(objects[i]);
+      }
+    }
+
+    public void printLine(Object... objects) {
+      print(objects);
+      writer.println();
+    }
+
     public void close() {
       writer.close();
     }
 
-    public void print(int i) {
-      writer.print(i);
+    public void printLine(int i) {
+      writer.println(i);
     }
   }
 
