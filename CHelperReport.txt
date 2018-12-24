@@ -1,3 +1,2 @@
-45 src/com/darkbit/problems/A. Dice Rolling.json
-1
+46 src/com/darkbit/problems/B. Div Times Mod.json
 0

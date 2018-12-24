@@ -21,17 +21,22 @@ public class Main {
     OutputStream outputStream = System.out;
     InputReader in = new InputReader(inputStream);
     OutputWriter out = new OutputWriter(outputStream);
-    ADiceRolling solver = new ADiceRolling();
+    BDivTimesMod solver = new BDivTimesMod();
     solver.solve(1, in, out);
     out.close();
   }
 
-  static class ADiceRolling {
+  static class BDivTimesMod {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-      int t = in.readInt();
-      for (int i = 0; i < t; ++i) {
-        int x = in.readInt();
-        out.printLine(x / 2);
+      int n = in.readInt(), x = in.readInt();
+
+      for (int i = 1; i <= 2000000; ++i) {
+        int d1 = i / x;
+        int d2 = i % x;
+        if (1L * d1 * d2 == n) {
+          out.print(i);
+          return;
+        }
       }
     }
   }
@@ -51,8 +56,8 @@ public class Main {
       writer.close();
     }
 
-    public void printLine(int i) {
-      writer.println(i);
+    public void print(int i) {
+      writer.print(i);
     }
   }
 
