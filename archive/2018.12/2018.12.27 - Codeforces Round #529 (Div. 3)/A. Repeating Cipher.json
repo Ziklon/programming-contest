@@ -1,0 +1,44 @@
+{
+  "name" : "A. Repeating Cipher",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\nbaabbb\n",
+    "output" : "bab\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10\nooopppssss\n",
+    "output" : "oops\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\nz\n",
+    "output" : "z\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.ARepeatingCipher",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.27",
+  "contestName" : "Codeforces Round #529 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,5 +1,5 @@
 {
-  "name" : "New Year Chaos",
+  "name" : "C. New Year and the Sphere Transmission",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -10,20 +10,25 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "2\n5\n2 1 5 3 4\n5\n2 5 1 3 4\n",
-    "output" : "3\nToo chaotic\n",
+    "input" : "6\n",
+    "output" : "1 5 9 21\n",
     "index" : 0,
+    "active" : true
+  }, {
+    "input" : "16\n",
+    "output" : "1 10 28 64 136\n",
+    "index" : 1,
     "active" : true
   } ],
   "location" : "src/com/darkbit/problems",
-  "vmArgs" : "-Xmx512M",
+  "vmArgs" : "-Xmx256M",
   "mainClass" : "Main",
-  "taskClass" : "com.darkbit.problems.NewYearChaos",
+  "taskClass" : "com.darkbit.problems.CNewYearAndTheSphereTransmission",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
-  "date" : "2018.12.24",
-  "contestName" : "HackerRank - Interview Preparation Kit - Arrays",
+  "date" : "2019.01.02",
+  "contestName" : "Good Bye 2018",
   "truncate" : true,
   "inputClass" : "net.egork.io.InputReader",
   "outputClass" : "net.egork.io.OutputWriter",

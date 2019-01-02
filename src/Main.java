@@ -4,10 +4,15 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.BufferedWriter;
-import java.io.Writer;
-import java.io.OutputStreamWriter;
+import java.util.Set;
 import java.util.InputMismatchException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.io.Writer;
+import java.io.OutputStreamWriter;
+import java.util.Collections;
 import java.io.InputStream;
 
 /**
@@ -21,32 +26,32 @@ public class Main {
     OutputStream outputStream = System.out;
     InputReader in = new InputReader(inputStream);
     OutputWriter out = new OutputWriter(outputStream);
-    NewYearChaos solver = new NewYearChaos();
+    CNewYearAndTheSphereTransmission solver = new CNewYearAndTheSphereTransmission();
     solver.solve(1, in, out);
     out.close();
   }
 
-  static class NewYearChaos {
+  static class CNewYearAndTheSphereTransmission {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-      int t = in.readInt();
-      for (int u = 0; u < t; ++u) {
-        int n = in.readInt();
-        int seq[] = new int[n];
-        for (int i = 0; i < n; ++i) seq[i] = in.readInt();
-
-        int ans = 0;
-        boolean isThereSol = true;
-        for (int i = 0; i < n; ++i)
-          if (Math.abs(seq[i] - 1 - i) > 2) {
-            isThereSol = false;
-          }
-
-        if (!isThereSol) {
-          out.printLine("Too chaotic");
-        } else {
-          out.printLine(3);
+      int n = in.readInt();
+      Set<Integer> divs = new HashSet<>();
+      for (int i = 1; i * i <= n; ++i)
+        if (n % i == 0) {
+          divs.add(i);
+          divs.add(n / i);
         }
-      }
+
+      List<Long> ans = new ArrayList<>();
+      for (Integer div : divs) ans.add(sum(div, n));
+
+      Collections.sort(ans);
+      out.printLine(ans.toArray());
+    }
+
+    private long sum(int k, int n) {
+
+      long res = k * (k - 1L) / 2;
+      return res * (n / k) + k;
     }
   }
 
@@ -77,10 +82,6 @@ public class Main {
 
     public void close() {
       writer.close();
-    }
-
-    public void printLine(int i) {
-      writer.println(i);
     }
   }
 
