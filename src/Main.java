@@ -4,14 +4,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.BufferedWriter;
-import java.util.Set;
 import java.util.InputMismatchException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.io.Writer;
 import java.io.OutputStreamWriter;
+import java.util.Comparator;
 import java.util.Collections;
 import java.io.InputStream;
 
@@ -26,32 +25,89 @@ public class Main {
     OutputStream outputStream = System.out;
     InputReader in = new InputReader(inputStream);
     OutputWriter out = new OutputWriter(outputStream);
-    CNewYearAndTheSphereTransmission solver = new CNewYearAndTheSphereTransmission();
+    CDivisionAndUnion solver = new CDivisionAndUnion();
     solver.solve(1, in, out);
     out.close();
   }
 
-  static class CNewYearAndTheSphereTransmission {
+  static class CDivisionAndUnion {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-      int n = in.readInt();
-      Set<Integer> divs = new HashSet<>();
-      for (int i = 1; i * i <= n; ++i)
-        if (n % i == 0) {
-          divs.add(i);
-          divs.add(n / i);
+      int t = in.readInt();
+
+      for (int i = 0; i < t; ++i) {
+        int n = in.readInt();
+
+        List<Pair<Integer, Pair<Integer, Integer>>> list = new ArrayList<>();
+        for (int j = 0; j < n; ++j) {
+          int a = in.readInt(), b = in.readInt();
+          list.add(Pair.makePair(j, Pair.makePair(a, b)));
         }
+        Collections.sort(list, Comparator.comparing(a -> a.second.first));
 
-      List<Long> ans = new ArrayList<>();
-      for (Integer div : divs) ans.add(sum(div, n));
+        boolean found = false;
+        int[] seq = new int[n];
+        int last = -1;
+        for (int j = 0; j + 1 < n && !found; ++j) {
+          Pair<Integer, Integer> p = list.get(j).second;
+          Pair<Integer, Integer> q = list.get(j + 1).second;
+          if (p.second.intValue() < q.first.intValue() && last < q.first) {
+            found = true;
+            for (int k = 0; k <= j; ++k) seq[list.get(k).first] = 1;
+            for (int k = j + 1; k < n; ++k) seq[list.get(k).first] = 2;
+          }
+          last = Math.max(last, Math.max(p.second, q.second));
+        }
+        if (!found) out.printLine(-1);
+        else {
+          out.printLine(seq);
+        }
+      }
+    }
+  }
 
-      Collections.sort(ans);
-      out.printLine(ans.toArray());
+  static class Pair<U, V> implements Comparable<Pair<U, V>> {
+    public final U first;
+    public final V second;
+
+    public static <U, V> Pair<U, V> makePair(U first, V second) {
+      return new Pair<U, V>(first, second);
     }
 
-    private long sum(int k, int n) {
+    private Pair(U first, V second) {
+      this.first = first;
+      this.second = second;
+    }
 
-      long res = k * (k - 1L) / 2;
-      return res * (n / k) + k;
+    public boolean equals(Object o) {
+      if (this == o) {
+        return true;
+      }
+      if (o == null || getClass() != o.getClass()) {
+        return false;
+      }
+
+      Pair pair = (Pair) o;
+
+      return !(first != null ? !first.equals(pair.first) : pair.first != null)
+          && !(second != null ? !second.equals(pair.second) : pair.second != null);
+    }
+
+    public int hashCode() {
+      int result = first != null ? first.hashCode() : 0;
+      result = 31 * result + (second != null ? second.hashCode() : 0);
+      return result;
+    }
+
+    public String toString() {
+      return "(" + first + "," + second + ")";
+    }
+
+    public int compareTo(Pair<U, V> o) {
+      int value = ((Comparable<U>) first).compareTo(o.first);
+      if (value != 0) {
+        return value;
+      }
+      return ((Comparable<V>) second).compareTo(o.second);
     }
   }
 
@@ -66,22 +122,26 @@ public class Main {
       this.writer = new PrintWriter(writer);
     }
 
-    public void print(Object... objects) {
-      for (int i = 0; i < objects.length; i++) {
+    public void print(int[] array) {
+      for (int i = 0; i < array.length; i++) {
         if (i != 0) {
           writer.print(' ');
         }
-        writer.print(objects[i]);
+        writer.print(array[i]);
       }
     }
 
-    public void printLine(Object... objects) {
-      print(objects);
+    public void printLine(int[] array) {
+      print(array);
       writer.println();
     }
 
     public void close() {
       writer.close();
+    }
+
+    public void printLine(int i) {
+      writer.println(i);
     }
   }
 
