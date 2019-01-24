@@ -7,7 +7,9 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 ###Java
-src/Main.java
+src/
+
+programming-contest.imlq
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -51,7 +53,6 @@ cmake-build-*/
 
 # IntelliJ
 out/
-src/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
