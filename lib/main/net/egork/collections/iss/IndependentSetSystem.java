@@ -1,18 +1,16 @@
 package net.egork.collections.iss;
 
-/**
- * @author Egor Kulikov (kulikov@devexperts.com)
- */
+/** @author Egor Kulikov (kulikov@devexperts.com) */
 public interface IndependentSetSystem {
-    public boolean join(int first, int second);
+  boolean join(int first, int second);
 
-    public int get(int index);
+  int get(int index);
 
-    public int getSetCount();
+  int getSetCount();
 
-    public void setListener(Listener listener);
+  void setListener(Listener listener);
 
-    public static interface Listener {
-        public void joined(int joinedRoot, int root);
-    }
+  interface Listener {
+    void joined(int joinedRoot, int root);
+  }
 }

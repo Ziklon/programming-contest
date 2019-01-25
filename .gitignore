@@ -9,7 +9,8 @@
 ###Java
 src/
 
-programming-contest.imlq
+programming-contest.iml
+CHelperReport.txt
 
 # User-specific stuff
 .idea/**/workspace.xml
