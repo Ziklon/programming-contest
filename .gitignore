@@ -11,6 +11,7 @@ src/
 
 programming-contest.iml
 CHelperReport.txt
+chelper.properties
 
 # User-specific stuff
 .idea/**/workspace.xml
