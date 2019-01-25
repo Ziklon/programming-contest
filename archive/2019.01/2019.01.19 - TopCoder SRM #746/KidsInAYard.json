@@ -1,0 +1,31 @@
+{
+  "name" : "KidsInAYard",
+  "signature" : {
+    "name" : "howMany",
+    "result" : "int",
+    "arguments" : [ "int", "int", "int" ],
+    "argumentNames" : [ "r2", "r3", "r5" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1", "1", "1" ],
+    "result" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "1", "0", "4" ],
+    "result" : "9",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "0", "0", "0" ],
+    "result" : "30",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.01.19",
+  "contestName" : "TopCoder SRM #746",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.KidsInAYard",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

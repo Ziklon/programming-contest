@@ -1,0 +1,46 @@
+{
+  "name" : "PairProduct",
+  "signature" : {
+    "name" : "findPair",
+    "result" : "int[]",
+    "arguments" : [ "int", "int", "int", "long" ],
+    "argumentNames" : [ "n", "a0", "step", "p" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "6", "2", "5", "14" ],
+    "result" : "0 1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "2", "5", "144" ],
+    "result" : "2 2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "2", "5", "47" ],
+    "result" : "",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "-200000", "-500000", "2040000000000" ],
+    "result" : "2 3",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "20", "-5", "1", "-6" ],
+    "result" : "2 7",
+    "index" : 4,
+    "active" : true
+  }, {
+    "arguments" : [ "20", "-5", "1", "0" ],
+    "result" : "5 5",
+    "index" : 5,
+    "active" : true
+  } ],
+  "date" : "2019.01.19",
+  "contestName" : "TopCoder SRM #746",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.PairProduct",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

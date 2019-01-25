@@ -1,0 +1,51 @@
+{
+  "name" : "Sherlock",
+  "signature" : {
+    "name" : "isItHim",
+    "result" : "String",
+    "arguments" : [ "String", "String" ],
+    "argumentNames" : [ "firstName", "lastName" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "BENEDICT", "CUMBERBATCH" ],
+    "result" : "It is him",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "BENADRYL", "CUCUMBERPATCH" ],
+    "result" : "It is him",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "HARSHIT", "MEHTA" ],
+    "result" : "It is someone else",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "BATAXXAT", "CURMUDGEON" ],
+    "result" : "It is him",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "BENEDI", "CUMBER" ],
+    "result" : "It is someone else",
+    "index" : 4,
+    "active" : true
+  }, {
+    "arguments" : [ "BAXAXAXY", "CENTRIFUGAL" ],
+    "result" : "It is someone else",
+    "index" : 5,
+    "active" : true
+  }, {
+    "arguments" : [ "BUMBLESHACK", "CRUMPLEHORN" ],
+    "result" : "It is him",
+    "index" : 6,
+    "active" : true
+  } ],
+  "date" : "2019.01.19",
+  "contestName" : "TopCoder SRM #747",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.Sherlock",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
