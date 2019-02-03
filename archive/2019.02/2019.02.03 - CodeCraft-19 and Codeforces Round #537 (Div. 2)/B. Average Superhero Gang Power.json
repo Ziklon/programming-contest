@@ -1,0 +1,44 @@
+{
+  "name" : "B. Average Superhero Gang Power",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 4 6\n4 7\n",
+    "output" : "11.00000000000000000000\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 2 6\n1 3 2 3\n",
+    "output" : "5.00000000000000000000\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 10 10\n2",
+    "output" : "6.0",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BAverageSuperheroGangPower",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.03",
+  "contestName" : "CodeCraft-19 and Codeforces Round #537 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

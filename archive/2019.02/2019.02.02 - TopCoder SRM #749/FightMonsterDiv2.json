@@ -1,0 +1,31 @@
+{
+  "name" : "FightMonsterDiv2",
+  "signature" : {
+    "name" : "damageDealt",
+    "result" : "long",
+    "arguments" : [ "long", "long", "long" ],
+    "argumentNames" : [ "attack", "level", "duration" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "100", "10", "3" ],
+    "result" : "330",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "100", "0", "5" ],
+    "result" : "500",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "100000", "100", "100000" ],
+    "result" : "500005000000000",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.02.02",
+  "contestName" : "TopCoder SRM #749",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.FightMonsterDiv2",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

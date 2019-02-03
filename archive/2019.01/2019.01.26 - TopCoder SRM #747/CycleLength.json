@@ -1,0 +1,36 @@
+{
+  "name" : "CycleLength",
+  "signature" : {
+    "name" : "solve",
+    "result" : "int",
+    "arguments" : [ "int", "int", "int", "int" ],
+    "argumentNames" : [ "seed", "a", "b", "m" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "7", "3", "4", "10" ],
+    "result" : "4",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "1", "2", "0", "997" ],
+    "result" : "332",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "47", "0", "23", "100" ],
+    "result" : "1",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "548687", "538918", "376524", "931161" ],
+    "result" : "690",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.01.26",
+  "contestName" : "TopCoder SRM #747",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.CycleLength",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
