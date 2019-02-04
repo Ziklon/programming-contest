@@ -1,0 +1,39 @@
+{
+  "name" : "B. Divisors of Two Integers",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "10\n10 2 8 1 2 4 1 20 4 5\n",
+    "output" : "20 8\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n9973 9973 1 1",
+    "output" : "9973 9973",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BDivisorsOfTwoIntegers",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.25",
+  "contestName" : "Codeforces Round #535 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
