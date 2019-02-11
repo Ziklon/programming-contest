@@ -1,0 +1,44 @@
+{
+  "name" : "D. Relatively Prime Graph",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 6\n",
+    "output" : "Possible\n2 5\n3 2\n5 1\n3 4\n4 1\n5 4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 12\n",
+    "output" : "Impossible\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 2",
+    "output" : "",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.DRelativelyPrimeGraph",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.09",
+  "contestName" : "Educational Codeforces Round 47 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

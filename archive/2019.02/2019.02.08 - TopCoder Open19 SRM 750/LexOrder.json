@@ -1,0 +1,36 @@
+{
+  "name" : "LexOrder",
+  "signature" : {
+    "name" : "between",
+    "result" : "String",
+    "arguments" : [ "String", "String" ],
+    "argumentNames" : [ "A", "B" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "car", "dog" ],
+    "result" : "careful",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "car", "cat" ],
+    "result" : "cash",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "abcdefghij", "abcdefghik" ],
+    "result" : "abcdefghijklmnopqrst",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "man", "mana" ],
+    "result" : "IMPOSSIBLE",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.02.08",
+  "contestName" : "TopCoder Open19 SRM 750",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.LexOrder",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

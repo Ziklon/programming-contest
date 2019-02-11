@@ -1,0 +1,49 @@
+{
+  "name" : "A. k-Factorization",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "100000 2\n",
+    "output" : "2 50000 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "100000 20\n",
+    "output" : "-1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1024 5\n",
+    "output" : "2 64 2 2 2 \n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2 2",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.AKFactorization",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.08",
+  "contestName" : "Educational Codeforces Round 19",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

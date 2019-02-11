@@ -1,0 +1,44 @@
+{
+  "name" : "B. Yet Another Array Partitioning Task",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "9 2 3\n5 2 5 2 4 1 1 3 2\n",
+    "output" : "21\n3 5 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 1 4\n4 1 3 2 2 3\n",
+    "output" : "12\n1 3 5 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 1 2\n-1000000000 1000000000\n",
+    "output" : "0\n1 \n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BYetAnotherArrayPartitioningTask",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.10",
+  "contestName" : "Codeforces Round #538 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

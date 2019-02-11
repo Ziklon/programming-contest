@@ -1,0 +1,44 @@
+{
+  "name" : "B. Minimum Ternary String",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "100210\n",
+    "output" : "001120\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "11222121\n",
+    "output" : "11112222\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "20\n",
+    "output" : "20\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BMinimumTernaryString",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "com.darkbit.problems.BMinimumTernaryStringTestCase" ],
+  "date" : "2019.02.09",
+  "contestName" : "Educational Codeforces Round 47 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
