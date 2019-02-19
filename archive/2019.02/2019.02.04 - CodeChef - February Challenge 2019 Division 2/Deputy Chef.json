@@ -1,0 +1,34 @@
+{
+  "name" : "Deputy Chef",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n4\n1 1 4 1\n3 4 2 1\n7\n5 4 5 4 5 4 5\n3 2 4 7 2 5 9\n",
+    "output" : "3\n-1\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.DeputyChef",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.04",
+  "contestName" : "CodeChef - February Challenge 2019 Division 2",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

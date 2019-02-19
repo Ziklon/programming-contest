@@ -1,0 +1,44 @@
+{
+  "name" : "D. Lunar New Year and a Wander",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 2\n1 2\n1 3\n",
+    "output" : "1 2 3 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 5\n1 4\n3 4\n5 4\n3 2\n1 5\n",
+    "output" : "1 4 3 2 5 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 10\n1 4\n6 8\n2 5\n3 7\n9 4\n5 6\n3 4\n8 10\n8 9\n1 10\n",
+    "output" : "1 4 3 7 9 8 6 5 2 10 \n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.DLunarNewYearAndAWander",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.01",
+  "contestName" : "Codeforces Round #536 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
