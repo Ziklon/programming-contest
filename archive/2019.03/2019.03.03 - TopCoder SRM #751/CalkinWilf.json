@@ -1,0 +1,36 @@
+{
+  "name" : "CalkinWilf",
+  "signature" : {
+    "name" : "findRational",
+    "result" : "int[]",
+    "arguments" : [ "String" ],
+    "argumentNames" : [ "path" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "" ],
+    "result" : "1 1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "R" ],
+    "result" : "2 1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "LRR" ],
+    "result" : "5 2",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "LRLRLRLRLRLRLRLRLRLRLRLRLRLRLR" ],
+    "result" : "2178309 1346269",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.03.03",
+  "contestName" : "TopCoder SRM #751",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.CalkinWilf",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

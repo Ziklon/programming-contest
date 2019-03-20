@@ -1,0 +1,31 @@
+{
+  "name" : "PokerRound",
+  "signature" : {
+    "name" : "amount",
+    "result" : "int",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "T" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "2000" ],
+    "result" : "9000",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "10000" ],
+    "result" : "10000",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "1722" ],
+    "result" : "-1",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.03.06",
+  "contestName" : "TopCoder Open19 SRM 752",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.PokerRound",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

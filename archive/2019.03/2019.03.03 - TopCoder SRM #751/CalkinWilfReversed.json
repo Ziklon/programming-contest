@@ -1,0 +1,36 @@
+{
+  "name" : "CalkinWilfReversed",
+  "signature" : {
+    "name" : "getDepth",
+    "result" : "long",
+    "arguments" : [ "long", "long" ],
+    "argumentNames" : [ "a", "b" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1", "1" ],
+    "result" : "0",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "4", "3" ],
+    "result" : "3",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "1", "1234567890123" ],
+    "result" : "1234567890122",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "1234567", "7654321" ],
+    "result" : "8837",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.03.03",
+  "contestName" : "TopCoder SRM #751",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.CalkinWilfReversed",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
