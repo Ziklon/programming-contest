@@ -1,0 +1,39 @@
+{
+  "name" : "C. Playlist",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 3\n4 7\n15 1\n3 6\n6 8\n",
+    "output" : "78\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 3\n12 31\n112 4\n100 100\n13 55\n55 50\n",
+    "output" : "10000\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.CPlaylist",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.22",
+  "contestName" : "Educational Codeforces Round 62 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

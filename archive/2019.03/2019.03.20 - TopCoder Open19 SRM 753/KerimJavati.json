@@ -1,0 +1,41 @@
+{
+  "name" : "KerimJavati",
+  "signature" : {
+    "name" : "howLong",
+    "result" : "int",
+    "arguments" : [ "String" ],
+    "argumentNames" : [ "text" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "aaa" ],
+    "result" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "d" ],
+    "result" : "7",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "bad" ],
+    "result" : "11",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "topcoder" ],
+    "result" : "184",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "hajikerim" ],
+    "result" : "159",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2019.03.20",
+  "contestName" : "TopCoder Open19 SRM 753",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.KerimJavati",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

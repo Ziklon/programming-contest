@@ -22,6 +22,17 @@ public class StringUtils {
         return count;
     }
 
+    public static String repeat(char c, int times){
+        StringBuilder sb = new StringBuilder();
+        for(int i =0; i < times; ++i)sb.append(c);
+        return sb.toString();
+    }
+    public static String repeat(String s, int times){
+        StringBuilder sb = new StringBuilder();
+        for(int i =0; i < times; ++i)sb.append(s);
+        return sb.toString();
+    }
+
     public static String unite(String[] array) {
         StringBuilder result = new StringBuilder();
         for (String s : array) {

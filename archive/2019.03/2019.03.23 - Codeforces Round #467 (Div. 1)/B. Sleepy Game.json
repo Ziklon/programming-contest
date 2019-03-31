@@ -1,0 +1,44 @@
+{
+  "name" : "B. Sleepy Game",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 6\n2 2 3\n2 4 5\n1 4\n1 5\n0\n1\n",
+    "output" : "Win\n1 2 4 5 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 2\n1 3\n1 1\n0\n2\n",
+    "output" : "Lose\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 2\n1 2\n1 1\n1\n",
+    "output" : "Draw\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BSleepyGame",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.23",
+  "contestName" : "Codeforces Round #467 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,61 @@
+{
+  "name" : "CCChecker2",
+  "signature" : {
+    "name" : "check",
+    "result" : "String",
+    "arguments" : [ "int", "int[]", "int[]", "int[]", "int[]", "int[]", "int[]", "int[]", "int[]" ],
+    "argumentNames" : [ "n", "startRow", "startCol", "destRow", "destCol", "moveStartRow", "moveStartCol", "moveDestRow", "moveDestCol" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "2", "1", "1", "2", "2", "1 1", "1 2", "1 2", "2 2" ],
+    "result" : "valid",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2", "1 2", "1 2", "1 2", "2 1", "2 1 2 1 2 1 2 2", "2 1 1 2 2 1 1 2", "1 2 2 1 1 2 2 2", "2 1 2 1 2 1 2 1" ],
+    "result" : "valid",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "", "", "", "", "", "", "", "" ],
+    "result" : "valid",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1", "1", "1", "1", "-47", "-42", "125216547", "125216547" ],
+    "result" : "invalid",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1", "1", "1", "3", "1", "1", "1", "3" ],
+    "result" : "invalid",
+    "index" : 4,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "1", "1", "2", "2", "1", "1", "2", "2" ],
+    "result" : "invalid",
+    "index" : 5,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1 1", "1 2", "1 1", "3 2", "1 1", "1 2", "1 1", "2 3" ],
+    "result" : "invalid",
+    "index" : 6,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1 1", "1 2", "1 1", "3 2", "1 1", "2 1", "1 1", "3 2" ],
+    "result" : "invalid",
+    "index" : 7,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1 1", "1 2", "1 1", "3 2", "1 1 1 2", "2 1 2 2", "2 1 1 1", "2 2 3 2" ],
+    "result" : "valid",
+    "index" : 8,
+    "active" : true
+  } ],
+  "date" : "2019.03.20",
+  "contestName" : "TopCoder Open19 SRM 753",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.CCChecker2",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

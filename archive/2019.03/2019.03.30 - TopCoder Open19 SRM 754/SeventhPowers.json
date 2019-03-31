@@ -1,0 +1,35 @@
+{
+  "name" : "SeventhPowers",
+  "signature" : {
+    "name" : "reconstructA",
+    "result" : "String",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "B" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "839927" ],
+    "result" : "407",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "130" ],
+    "result" : "121",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "43740" ],
+    "result" : "33333333333333333333",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "10000000" ],
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.03.30",
+  "contestName" : "TopCoder Open19 SRM 754",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.SeventhPowers",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
