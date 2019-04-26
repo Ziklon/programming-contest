@@ -1,0 +1,49 @@
+{
+  "name" : "C. Two Shuffled Sequences",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7\n7 2 7 3 3 1 4\n",
+    "output" : "YES\n2\n3 7 \n5\n7 4 3 2 1 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n4 3 1 5 3\n",
+    "output" : "YES\n1\n3 \n4\n5 4 3 1 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5\n1 1 2 1 2\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "5\n0 1 2 3 4\n",
+    "output" : "YES\n0\n\n5\n4 3 2 1 0 \n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.CTwoShuffledSequences",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.31",
+  "contestName" : "Codeforces Round #550 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,44 @@
+{
+  "name" : "A. The King's Race",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n2 3\n",
+    "output" : "White\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n3 5\n",
+    "output" : "Black\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n2 2\n",
+    "output" : "Black\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.ATheKingsRace",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.07",
+  "contestName" : "Lyft Level 5 Challenge 2018 - Final Round (Open Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

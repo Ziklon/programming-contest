@@ -1,0 +1,44 @@
+{
+  "name" : "B. Taxi drivers and Lyft",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 1\n1 2 3 10\n0 0 1 0\n",
+    "output" : "3 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 2\n2 3 4 5 6\n1 0 0 0 1\n",
+    "output" : "2 1 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 4\n2 4 6 10 15\n1 1 1 1 0\n",
+    "output" : "0 0 0 1 \n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.BTaxiDriversAndLyft",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.07",
+  "contestName" : "Lyft Level 5 Challenge 2018 - Final Round (Open Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -14,7 +14,24 @@ public class TreeCounter<K> extends TreeMap<K, Long> {
         put(key, get(key) + 1);
     }
 
-    public void add(K key, long delta) {
+    public Long removeOne(K key) {
+        return remove(key, 1L);
+    }
+
+    public Long remove(K key, Long delta) {
+        if (!containsKey(key)) {
+            return -1L;
+        }
+        Long curVal = get(key) - delta;
+        if (curVal <= 0L) {
+            remove(key);
+        } else {
+            put(key, curVal);
+        }
+        return curVal;
+    }
+
+    public void add(K key, Long delta) {
         put(key, get(key) + delta);
     }
 

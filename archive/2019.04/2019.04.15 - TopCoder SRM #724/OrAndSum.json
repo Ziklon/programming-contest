@@ -1,0 +1,46 @@
+{
+  "name" : "OrAndSum",
+  "signature" : {
+    "name" : "isPossible",
+    "result" : "String",
+    "arguments" : [ "long[]", "long[]" ],
+    "argumentNames" : [ "pairOr", "pairSum" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "7", "11" ],
+    "result" : "Possible",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "11", "7" ],
+    "result" : "Impossible",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "3 3 7 5 7", "3 5 7 9 11" ],
+    "result" : "Possible",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "1 100 1000", "100 1000 10000" ],
+    "result" : "Impossible",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "261208776456074191 261208776456074191 261208776456074191", "333333333333333333 333333333333333333 333333333333333333" ],
+    "result" : "Possible",
+    "index" : 4,
+    "active" : true
+  }, {
+    "arguments" : [ "0", "0" ],
+    "result" : "Possible",
+    "index" : 5,
+    "active" : true
+  } ],
+  "date" : "2019.04.15",
+  "contestName" : "TopCoder SRM #724",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.OrAndSum",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
