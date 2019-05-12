@@ -1,0 +1,34 @@
+{
+  "name" : "TaskA",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "TASK_ID",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "TASK_ID",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n2 2\n3 2\n0 1",
+    "output" : "Case #1: 2\nCase #2: 3\nCase #3: 1",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.29",
+  "contestName" : "Tuenti Challengue",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

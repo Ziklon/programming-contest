@@ -1,0 +1,44 @@
+{
+  "name" : "C. Balanced Team",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n1 10 17 12 15 2\n",
+    "output" : "3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10\n1337 1337 1337 1337 1337 1337 1337 1337 1337 1337\n",
+    "output" : "10\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "6\n1 1000 10000 10 100 1000000000\n",
+    "output" : "1\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.CBalancedTeam",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.07",
+  "contestName" : "Codeforces Round #544 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,34 @@
+{
+  "name" : "TaskB",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "CUSTOM",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "TASK_ID",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1\n7\nGalactica:A,B,C\nA:E,D\nB:D\nC:D,F\nD:F\nE:New Earth\nF:New Earth",
+    "output" : "Case #1: 5",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.29",
+  "contestName" : "Tuenti Challengue",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
