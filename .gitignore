@@ -20,7 +20,7 @@ chelper.properties
 .idea/**/dictionaries
 .idea/**/shelf
 .idea
-
+build
 # Generated files
 .idea/**/contentModel.xml
 
@@ -32,7 +32,11 @@ chelper.properties
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+task**.in
+task**.out
 
+test
+lib
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
