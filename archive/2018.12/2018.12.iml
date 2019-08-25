@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.24 - Codeforces Round #528 (Div. 2, based on Technocup 2019 Elimination Round 4)" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.24 - Educational Codeforces Round 56 (Rated for Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.24 - HackerRank - Interview Preparation Kit - Warm-up Challenges" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.27 - Codeforces Round #526 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.27 - Codeforces Round #529 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.28 - Codeforces Round #459 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2018.12.28 - Educational Codeforces Round 57 (Rated for Div. 2)" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="lib" />
+  </component>
+</module>

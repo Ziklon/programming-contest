@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.04 - Codeforces Round #550 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.05 - CodeChef - April Challenge 2019 Division 2" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.06 - Foregone Solution" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.06 - HackerEarth - Algorithms - Searching - Binary Search" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.06 - Training" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.06 - You Can Go Your Own Way" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.07 - Lyft Level 5 Challenge 2018 - Final Round (Open Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.13 - Codeforces Round #551 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.15 - CodeChef - April Challenge 2019 Division 2" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.15 - TopCoder Open19 SRM 755" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.15 - TopCoder SRM #724" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.15 - TopCoder SRM #755" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.17 - Codeforces Round #552 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.18 - Codeforces Round #552 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.18 - Codeforces Round #553 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.20 - 2019 Topcoder Open Algo" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.20 - Forethought Future Cup - Elimination Round" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.21 - Codeforces Round #153 (Div. 1)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.21 - Diverse Subarray" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.21 - Energy Stones" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.22 - Educational Codeforces Round 63 (Rated for Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.24 - Codeforces Global Round 2" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.24 - Codeforces Round #554 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.26 - Codeforces Round #555 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.27 - AtCoder Beginner Contest 125" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.27 - CodeChef - April Lunchtime 2019 Division 2" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.28 - Codeforces Round #555 (Div. 3)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.29 - Codeforces Round #556 (Div. 2)" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.29 - Tuenti Challengue" />
+      <excludeFolder url="file://$MODULE_DIR$/2019.04.30 - Codeforces Round #277.5 (Div. 2)" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="lib" />
+  </component>
+</module>

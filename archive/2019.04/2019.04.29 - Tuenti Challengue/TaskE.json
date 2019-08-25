@@ -1,0 +1,34 @@
+{
+  "name" : "TaskE",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "CUSTOM",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "TASK_ID",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\nG\nP .PFF IQOZ J\nB\nJ 6JZZ GKH FKK8 4",
+    "output" : "Case #1: I MISS YOU. G\nCase #2: I MISS YOU TOO. B",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "com.darkbit.problems.TaskE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.29",
+  "contestName" : "Tuenti Challengue",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
