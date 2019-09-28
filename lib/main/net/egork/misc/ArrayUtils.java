@@ -230,11 +230,11 @@ public class ArrayUtils {
     return array;
   }
 
-  public static int lowerBound(int[] array, int v) {
+  public static int lowerBound(long[] array, long v) {
     return lowerBound(array, 0, array.length, v);
   }
 
-  public static int lowerBound(int[] array, int left, int right, int v) {
+  public static int lowerBound(long[] array, int left, int right, long v) {
     if (left > right || left < 0 || right > array.length) throw new IllegalArgumentException();
     int low = left - 1, high = right;
     while (high - low > 1) {
