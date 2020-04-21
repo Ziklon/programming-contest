@@ -1,0 +1,36 @@
+{
+  "name" : "MaximumMoves",
+  "signature" : {
+    "name" : "getMaximumMoves",
+    "result" : "long",
+    "arguments" : [ "long", "long" ],
+    "argumentNames" : [ "P", "Q" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "5", "9" ],
+    "result" : "2",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "10" ],
+    "result" : "2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "6" ],
+    "result" : "-1",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "10", "2" ],
+    "result" : "-1",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.11.27",
+  "contestName" : "TopCoder SRM #770",
+  "testClasses" : [ ],
+  "fqn" : "com.darkbit.problems.MaximumMoves",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

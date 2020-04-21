@@ -20,7 +20,7 @@ public class FenwickIntTree {
   }
 
   public int sum(int l, int r) {
-    return sum(r) - sum(r - 1);
+    return sum(r) - sum(l - 1);
   }
 
   public void add(int idx, int delta) {

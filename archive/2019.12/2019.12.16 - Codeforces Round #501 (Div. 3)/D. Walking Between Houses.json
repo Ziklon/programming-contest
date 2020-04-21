@@ -1,0 +1,49 @@
+{
+  "name" : "D. Walking Between Houses",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "10 2 15\n",
+    "output" : "YES\n10 4 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10 9 45\n",
+    "output" : "YES\n10 1 10 1 2 1 2 1 6 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 9 81\n",
+    "output" : "YES\n10 1 10 1 10 1 10 1 10 \n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "10 9 82\n",
+    "output" : "NO\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/com/darkbit/problems",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "com.darkbit.problems.DWalkingBetweenHouses",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.12.16",
+  "contestName" : "Codeforces Round #501 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
